@@ -1,0 +1,4041 @@
+.news {
+    min-height: 100px;
+    width: 100%;
+    height: 235px;
+    background: $color-white;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    position: relative;
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-item {
+        height: 100%;
+    }
+
+    &-img {
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+    }
+
+    .carousel-caption-1 {
+        height: 100%;
+        width: 50%;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $color-white;
+        padding: 15px 8px 0 8px;
+        text-align: right;
+    }
+
+    .subTitle {
+        @include font-size-12-4-1;
+        color: $color-1;
+        margin-bottom: 7px;
+    }
+
+    .title {
+        color: $color-black;
+        @include font-size-19-6-1;
+        margin-bottom: 15px;
+    }
+
+    .detail {
+        @include font-size-13;
+        margin-bottom: 15px;
+        color: $color-black;
+        text-align: justify;
+    }
+
+    .carousel-indicators-1 {
+        bottom: 12px;
+        direction: ltr;
+        left: 0;
+        right: auto;
+        text-align: center;
+        width: 300px;
+        margin: 0;
+
+        & button {
+            background: #d0d0d0;
+            border-radius: 3px;
+            color: $color-white;
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            border: none;
+            text-indent: 0;
+            opacity: 1;
+        }
+
+        .carousel-indicators-1 .active {
+            background: #0097a7 !important;
+        }
+    }
+
+    .carousel-indicators-1 .active {
+        background: #0097a7 !important;
+    }
+
+    .carousel-control-prev-1 {
+        left: 50%;
+        top: 110px;
+        bottom: auto;
+        background: $color-white;
+        border-radius: 3px 0 0 3px;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        color: $color-1;
+
+        & svg {
+            margin-right: 2.5px;
+            color: $color-1;
+            margin-top: 9px;
+        }
+    }
+
+    .carousel-control-next-1 {
+        left: auto;
+        right: 0;
+        top: 110px;
+        bottom: auto;
+        background: $color-white;
+        border-radius: 3px 0 0 3px;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+        color: $color-1;
+
+        & svg {
+            margin-left: 5.5px;
+            color: $color-1;
+            margin-top: 9px;
+        }
+    }
+
+}
+
+
+.pl-8x {
+    padding-left: 8px;
+    min-height: 10px;
+}
+
+.pr-8x {
+    padding-right: 8px;
+    min-height: 10px;
+}
+
+.advertise-1 {
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    & a {
+        background-color: rgb(245, 245, 245);
+        height: 160px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+
+    & img {
+        border-radius: 4px;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.advertise-2 {
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    & a {
+        background-color: rgb(245, 245, 245);
+        height: 80px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+
+    & img {
+        border-radius: 4px;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.ligeBartar {
+    @include font-size-12-4-1;
+    background: $color-white;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+    min-height: 100px;
+    // overflow: scroll;
+
+    &-filter {
+        padding: 15px 0 10px;
+    }
+
+    &-title {
+        @include font-size-16-7-1;
+        color: $color-6;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .filter-content {
+        display: flex;
+        margin-top: 10px;
+        width: 100%;
+
+        .dropdown {
+            background: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            margin: 0 5px;
+            // padding: 5px;
+            width: 50%;
+            // position: relative;
+
+
+            &-menu {
+                z-index: 100;
+                overflow-y: auto;
+                text-align: right;
+                max-height: 300px;
+
+                & a {
+
+                    &:hover {
+                        color: white;
+                        background-color: $color-5;
+                    }
+                }
+            }
+
+            &-item {
+                @include font-size-12-5-1;
+                background: $color-white;
+                color: $color-1;
+            }
+        }
+    }
+
+    &-subtitle {
+        background-color: $color-3;
+        padding: 5px 0;
+        text-align: center;
+
+        & h3 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: $color-white;
+            margin: 0;
+        }
+    }
+
+    &-dateTitle {
+        background: $color-4;
+        color: $color-white;
+        height: 24px;
+        text-align: center;
+
+        & h4 {
+            @include font-size-12-5-1;
+            color: $color-white;
+            padding: 5px 0;
+            margin: 0;
+        }
+    }
+
+    &-game {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            text-align: right;
+            width: 14%;
+
+            & a {
+                color: $color-1;
+            }
+
+            & img {
+                max-width: 17px;
+                height: auto;
+            }
+        }
+
+        &-name {
+            width: 76%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-1;
+
+            .team1 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                text-align: left;
+                width: 42%;
+                word-spacing: -3px;
+                letter-spacing: .2px;
+            }
+
+            .line {
+                display: flex;
+                align-items: baseline;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 1.5;
+                padding-left: 3px;
+                padding-right: 3px;
+                text-align: center;
+                width: 16%;
+                letter-spacing: .2px;
+            }
+
+            .team2 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+                text-align: right;
+                width: 42%;
+                word-spacing: -3px;
+                letter-spacing: .2px;
+            }
+        }
+
+        &-time {
+            text-align: left;
+            width: 12%;
+        }
+    }
+
+    .back-f5f5f5 {
+        background: #f5f5f5;
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.suggested-content {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    height: 310px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+
+    &-title {
+        border-top: 3px solid #0097a7;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 50px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & span {
+            @include font-size-16-7-1;
+            color: $color-1;
+        }
+
+        & a {
+            color: $color-1;
+        }
+
+        & img {
+            width: 80px;
+            height: 21px;
+        }
+    }
+
+    &-body {
+        width: 100%;
+        background-color: white;
+        position: relative;
+        height: 260px;
+        overflow: hidden;
+
+        .carousel-item-2 {
+            height: 100%;
+
+            & img {
+                margin-bottom: 5px;
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        .carousel-caption-2 {
+            position: relative;
+            right: auto;
+            left: auto;
+            bottom: auto;
+            padding: 5px 15px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & p {
+                margin: 0;
+                // padding: 7px;
+                word-wrap: break-word;
+                background-color: white;
+                color: $color-black;
+                @include font-size-14-4-1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .carousel-control-prev-1 {
+            transform: rotate(180deg);
+            background: unset;
+            color: unset;
+            position: absolute;
+            left: -10px;
+            top: 80px;
+            z-index: 10;
+            padding: unset;
+            font-size: unset;
+            border: none;
+        }
+
+        .carousel-control-next-1 {
+            background: unset;
+            color: unset;
+            position: absolute;
+            right: -10px;
+            top: 80px;
+            z-index: 10;
+            padding: unset;
+            font-size: unset;
+            border: none;
+        }
+    }
+}
+
+.ligeIran {
+    background: $color-white;
+    border-top: 3px solid $color-6;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    min-height: 100px;
+
+    &-title {
+        padding: 15px 0 10px;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-select-3 {
+        background-color: $color-white;
+        border: 1px solid #d7d7d7;
+        border-radius: 5px;
+        color: $color-1;
+        @include font-size-12-5-1;
+        // margin: 0 5px;
+        padding: 5px;
+        background-position: left .75rem center;
+
+        &:focus-visible {
+            border: 3px solid $color-black;
+            box-shadow: none;
+        }
+
+        & option {
+            color: $color-1;
+        }
+    }
+
+    .ligeIran-body {
+
+
+        &-title {
+            background-color: $color-3;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: $color-white;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            @include font-size-12-4-1;
+
+            .table {
+                width: 100%;
+                border: 0;
+
+                & thead {
+                    border: 0;
+                }
+            }
+
+            .ligeIran-table-thead-tr {
+                background: $color-4;
+                color: $color-white;
+                border: 0;
+
+                & th {
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    padding: 5px 0;
+                }
+
+                & th:nth-of-type(1) {
+                    width: 30px;
+                }
+
+                & th:nth-of-type(2) {
+                    width: 150px;
+                }
+
+                & th:nth-of-type(3) {
+                    width: 40px;
+                }
+
+                & th:nth-of-type(4) {
+                    width: 40px;
+                }
+            }
+
+            .ligeIran-tbody tr:nth-child(odd) {
+                background: #f5f5f5;
+            }
+
+            .ligeIran-tbody tr>td:nth-of-type(1) {
+                color: $color-black;
+                padding: 5px 0;
+                @include font-size-12-5-1;
+                border: 0;
+            }
+
+            .ligeIran-tbody tr>td:nth-of-type(2) {
+                color: $color-1;
+                @include font-size-12-4-1;
+                padding: 5px 0;
+                border: 0;
+            }
+
+            .ligeIran-tbody tr>td:nth-of-type(3) {
+                color: $color-1;
+                @include font-size-12-4-1;
+                padding: 5px 0;
+                border: 0;
+            }
+
+            .ligeIran-tbody tr>td:nth-of-type(4) {
+                color: $color-black;
+                padding: 5px 0;
+                @include font-size-12-5-1;
+                border: 0;
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.lastNews {
+    min-height: 400px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-body {
+
+
+        &-tabs {
+
+
+            .tabs-ul {
+                width: 100%;
+                text-align: center;
+                justify-content: space-evenly;
+
+                & li .active {
+                    border-color: $color-6;
+                    color: $color-6;
+                }
+            }
+
+            .tabs-li {
+                background-color: $color-white;
+                @include font-size-12-5-1;
+                padding-top: 15px;
+                text-align: center;
+            }
+
+            .nav-link-2 {
+                background-color: $color-white;
+                border-bottom: 2px solid #f5f5f5;
+                @include font-size-12-5-1;
+                padding: 15px 0;
+                text-align: center;
+            }
+
+            .nav-underline-1 {
+                border-color: $color-6;
+                color: $color-6;
+            }
+        }
+
+        &-content {
+
+
+            .lastNews-select {
+                width: 100%;
+                margin-top: 30px;
+
+                .form-select-4 {
+                    background-color: $color-white;
+                    border: 1px solid #d7d7d7;
+                    border-radius: 5px;
+                    color: $color-1;
+                    @include font-size-12-5-1;
+                    // margin: 0 5px;
+                    padding: 5px;
+                    background-position: left .75rem center;
+
+                    &:focus-visible {
+                        border: 3px solid $color-black;
+                        box-shadow: none;
+                    }
+
+                    & option {
+                        color: $color-1;
+                    }
+                }
+            }
+
+            .lastNews-news {
+                max-height: 1000px;
+                min-height: 300px;
+                position: relative;
+                width: 100%;
+                overflow: auto;
+
+                &-tab1 {
+                    overflow: auto;
+                    width: 100%;
+
+                    & ul {
+                        padding-top: 10px;
+                    }
+
+                    &-item {
+                        width: 100%;
+                        padding: 3px 5px;
+                    }
+
+                    &-link {
+                        @include font-size-12-4-1;
+                        padding: 3px 0;
+                        text-align: justify;
+                        width: 100%;
+                        color: $color-1;
+                    }
+
+                    &-icon1 {
+                        background-image: url(../img/icon-news-video-filled.svg);
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                        position: relative;
+                        top: 3px;
+                    }
+
+                    &-icon2 {
+                        background-image: url(../img/news-type-text.svg);
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+
+                &::-webkit-scrollbar-button {
+                    display: none;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: auto;
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: $color-5;
+                }
+            }
+        }
+    }
+}
+
+.volleyball {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-5 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+
+
+        &-part1 {
+
+
+            &-title {
+                background-color: $color-3;
+                padding: 5px 0;
+                text-align: center;
+                width: 100%;
+
+                & h3 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    color: $color-white;
+                    margin-bottom: 0;
+                }
+            }
+
+            &-main {
+                width: 100%;
+
+                & table {
+                    width: 100%;
+                }
+
+                & tr {
+                    background: $color-white;
+                }
+
+                & td:nth-of-type(1) {
+                    color: $color-1;
+                    font-family: sans-serif;
+                    @include font-size-12-5-1;
+                    padding: 5px 3px 5px 0;
+                    width: 20px;
+                    text-align: center;
+                }
+
+                & td:nth-of-type(2) {
+                    color: $color-1;
+                    font-family: sans-serif;
+                    @include font-size-12-5-1;
+                    padding: 5px 0px 5px 0;
+                    width: 70px;
+                    text-align: right;
+                    white-space: nowrap;
+                }
+
+                & td:nth-of-type(3),
+                & td:nth-of-type(4),
+                & td:nth-of-type(5),
+                & td:nth-of-type(6),
+                & td:nth-of-type(7),
+                & td:nth-of-type(8) {
+                    color: $color-1;
+                    font-family: sans-serif;
+                    @include font-size-12-5-1;
+                    padding: 5px 0px 5px 0;
+                    width: 20px;
+                    text-align: center;
+                }
+
+                & td:nth-of-type(9) {
+                    color: $color-1;
+                    font-family: sans-serif;
+                    @include font-size-12-5-1;
+                    padding: 5px 0px 5px 3px;
+                    width: 40px;
+                    text-align: left;
+                }
+            }
+        }
+
+        &-part2 {
+            max-height: 300px;
+            overflow: auto;
+            position: relative;
+
+            &-tabel-title {
+                background: $color-4;
+                color: $color-white;
+                text-align: center;
+                height: 24px;
+                width: 100%;
+
+                & h4 {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    color: $color-white;
+                    margin: 0;
+                    padding: 5px 0;
+                }
+            }
+
+            &-tabel-content {
+                border-bottom: 1px solid #eee;
+
+                & tr:nth-of-type(1) {
+                    background: #f5f5f5;
+                }
+
+                & table {
+                    width: 100%;
+                    border-color: transparent !important;
+                }
+
+                .tabel-tr-1 {
+
+                    & td:nth-of-type(1) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        padding: 5px 3px 5px 0;
+                        width: 20px;
+                        text-align: center;
+                    }
+
+                    & td:nth-of-type(2) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        @include font-size-12-4-1;
+                        padding: 5px 0px 5px 0;
+                        width: 70px;
+                        text-align: right;
+                        white-space: nowrap;
+                    }
+
+                    & td:nth-of-type(3),
+                    & td:nth-of-type(4),
+                    & td:nth-of-type(5),
+                    & td:nth-of-type(6),
+                    & td:nth-of-type(7),
+                    & td:nth-of-type(8) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        @include font-size-12-5-1;
+                        padding: 5px 0px 5px 0;
+                        width: 20px;
+                        text-align: center;
+                    }
+
+                    & td:nth-of-type(9) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        @include font-size-12-5-1;
+                        padding: 5px 0px 5px 3px;
+                        width: 40px;
+                        text-align: left;
+                    }
+                }
+
+                .tabel-tr-2 {
+
+                    & td:nth-of-type(1) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        padding: 5px 3px 5px 0;
+                        width: 20px;
+                        text-align: center;
+                    }
+
+                    & td:nth-of-type(2) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        @include font-size-12-4-1;
+                        padding: 5px 0px 5px 0;
+                        width: 70px;
+                        text-align: right;
+                        white-space: nowrap;
+                    }
+
+                    & td:nth-of-type(3),
+                    & td:nth-of-type(4),
+                    & td:nth-of-type(5),
+                    & td:nth-of-type(6),
+                    & td:nth-of-type(7),
+                    & td:nth-of-type(8) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        @include font-size-12-5-1;
+                        padding: 5px 0px 5px 0;
+                        width: 20px;
+                        text-align: center;
+                    }
+
+                    & td:nth-of-type(9) {
+                        color: $color-1;
+                        font-family: sans-serif;
+                        @include font-size-12-5-1;
+                        padding: 5px 0px 5px 3px;
+                        width: 40px;
+                        text-align: left;
+                    }
+                }
+            }
+
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            &::-webkit-scrollbar-button {
+                display: none;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: auto;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: $color-5;
+            }
+        }
+
+        &-part3 {
+            @include font-size-12-4-1;
+            width: 100%;
+
+            &-title {
+                background-color: $color-3;
+                padding: 5px 0;
+                text-align: center;
+                width: 100%;
+
+                & h3 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    color: $color-white;
+                    margin-bottom: 0;
+                }
+            }
+
+            &-main {
+                width: 100%;
+
+                .volleyball-body-part3-table {
+                    border-color: transparent !important;
+
+                    &>thead>tr {
+                        background: $color-4;
+                    }
+
+                    &>thead>tr>th:nth-child(1) {
+                        width: 30px;
+                        color: $color-white;
+                        padding: 5px 0;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
+
+                    &>thead>tr>th:nth-child(2) {
+                        width: 150px;
+                        color: $color-white;
+                        padding: 5px 0;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
+
+                    &>thead>tr>th:nth-child(3),
+                    &>thead>tr>th:nth-child(4) {
+                        width: 40px;
+                        color: $color-white;
+                        padding: 5px 0;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
+
+                    &>tbody>tr:nth-child(odd) {
+                        background: #f5f5f5;
+                    }
+
+                    &>tbody>tr>td:nth-child(1),
+                    &>tbody>tr>td:nth-child(4) {
+                        color: $color-black;
+                        font-weight: 500;
+                    }
+
+                    &>tbody>tr>td:nth-child(2),
+                    &>tbody>tr>td:nth-child(3) {
+                        color: $color-1;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.basketball {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-6 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+        max-height: 300px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        @include font-size-12-4-1;
+
+        &-title {
+            background-color: $color-3;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: $color-white;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table-title {
+            background: $color-4;
+            color: $color-white;
+            text-align: center;
+            height: 24px;
+            width: 100%;
+
+            & h4 {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: $color-white;
+                margin: 0;
+                padding: 5px 0;
+            }
+        }
+
+        &-table-content {
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 100%;
+
+            .basketball-body-table-col-1 {
+                display: inline-block;
+                width: 14%;
+
+                & img {
+                    max-width: 17px;
+                }
+            }
+
+            .basketball-body-table-col-2 {
+                display: inline-flex;
+                width: 76%;
+
+                .basketball-team1 {
+                    font-size: 12px;
+                    font-weight: 400;
+                    // line-height: 1;
+                    text-align: left;
+                    width: 42%;
+                    letter-spacing: -.2px;
+                }
+
+                .basketball-underline {
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    text-align: center;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    width: 16%;
+                    letter-spacing: -.2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                }
+
+                .basketball-team2 {
+                    font-size: 12px;
+                    font-weight: 400;
+                    // line-height: 1;
+                    text-align: right;
+                    width: 42%;
+                    letter-spacing: -.2px;
+                }
+            }
+
+            .basketball-body-table-col-3 {
+                text-align: left;
+                width: 12%;
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.liveShow {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        background: #f5f5f5;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &-Anten,
+        &-Channel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-size: 12px;
+            padding: 0;
+        }
+
+        &-Anten {
+            color: red;
+        }
+
+        .checkbox1,
+        .checkbox2 {
+            border: 1px solid $color-6;
+            border-radius: 4px;
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+            margin-top: 0;
+            cursor: pointer;
+
+            &:checked {
+                background-color: $color-6;
+            }
+        }
+
+        .form-check-input:focus {
+            box-shadow: none;
+        }
+
+        .form-check-input:checked {
+            border-color: $color-6;
+        }
+
+        .checkbox-label {
+            padding-right: 5px;
+            padding-top: 3px;
+        }
+    }
+
+    .filter-error {
+        background-color: #f5e4de;
+        border-color: #ff7e75;
+        color: #e74c3c;
+        font-size: 12px;
+        padding: 5px;
+        text-align: center;
+        display: none;
+    }
+
+    &-date {
+        background: $color-4 ;
+        color: $color-white;
+        height: 24px;
+        text-align: center;
+
+        & h3 {
+            @include font-size-12-5-1;
+            color: $color-white;
+            padding: 5px 0;
+        }
+    }
+
+    &-game {
+        width: 100%;
+        padding: 5px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+        &-time {
+            @include font-size-12-5-1;
+            color: $color-1;
+            width: 12%;
+        }
+
+        &-teams {
+            width: 70%;
+            padding-right: 10px;
+            text-align: center;
+
+            .liveShow-game-team-1 {
+                text-align: left;
+                display: inline;
+                font-size: 12px;
+            }
+
+            .liveShow-game-underline {
+                display: inline;
+                font-size: 12px;
+            }
+
+            .liveShow-game-team-2 {
+                text-align: right;
+                display: inline;
+                font-size: 12px;
+            }
+
+            .liveShow-game-text {
+                color: #757575;
+                display: block;
+                font-size: 10px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        &-tv {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: center;
+            width: 18%;
+        }
+    }
+}
+
+.videos {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-body-tabs {
+        width: 100%;
+
+        .tabs-ul {
+            width: 100%;
+            text-align: center;
+            justify-content: space-evenly;
+
+            & li .active {
+                border-color: $color-6;
+                color: $color-6;
+            }
+        }
+
+        .tabs-li {
+            background-color: $color-white;
+            @include font-size-14-4-1;
+            padding-top: 15px;
+            text-align: center;
+        }
+
+        .nav-link-2 {
+            background-color: $color-white;
+            border-bottom: 2px solid #f5f5f5;
+            @include font-size-12-5-1;
+            padding: 0 0 10px;
+            text-align: center;
+        }
+
+        .nav-underline-1 {
+            border-color: $color-6;
+            color: $color-6;
+        }
+    }
+
+    &-body-content {
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .video {
+        margin-bottom: 10px;
+        padding: 0 8px;
+        border: 0;
+
+        &-box {
+            background: #fcfcfc;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+
+            .video-cover-box {
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                padding-top: 56%;
+                position: relative;
+
+                & img {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: inherit;
+                    margin: auto;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            .video-time-box {
+                background: rgba(0, 0, 0, .5);
+                position: absolute;
+                bottom: 4px;
+                right: 4px;
+                display: flex;
+
+                & span {
+                    width: 15px;
+                    height: 15px;
+                    padding: 1px 4px;
+                    background: $color-6;
+                    text-align: center;
+                    line-height: 12px;
+                }
+
+                & p {
+                    color: $color-white;
+                    font-size: 10px;
+                    line-height: normal;
+                    padding: 0 5px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-discription {
+
+            & p {
+                font-size: 11px;
+                margin-top: 0;
+                margin-bottom: 3px;
+                padding-right: 5px;
+                color: #999;
+            }
+
+            & h3 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1.7;
+                margin: 0;
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.newspaperBox {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-body {
+        width: 100%;
+        height: 245px;
+        overflow: hidden;
+
+        .carousel-item-3 {
+            height: 100%;
+
+            & img {
+                margin-bottom: 5px;
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        .carousel-caption-3 {
+            position: relative;
+            right: auto;
+            left: auto;
+            bottom: auto;
+            padding: 5px 15px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & p {
+                margin: 0;
+                // padding: 7px;
+                word-wrap: break-word;
+                background-color: white;
+                color: $color-black;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1.5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .carousel-control-prev-2 {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 100px;
+            left: -4px;
+            background: $color-white;
+            border-radius: 3px;
+            border: none;
+        }
+
+        .carousel-control-next-2 {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 100px;
+            right: -4px;
+            background: $color-white;
+            border-radius: 3px;
+            color: inherit;
+            font: inherit;
+            border: none;
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.top-players {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-7 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body-tabs {
+        width: 100%;
+
+        .tabs-ul {
+            width: 100%;
+            text-align: center;
+            justify-content: space-evenly;
+            padding: 12px 0;
+
+            & li .active {
+                border-color: $color-6;
+                color: $color-6;
+            }
+        }
+
+        .tabs-li {
+            background-color: $color-white;
+            @include font-size-14-4-1;
+            // padding-top: 15px;
+            text-align: center;
+        }
+
+        .nav-link-2 {
+            background-color: $color-white;
+            border-bottom: 2px solid #f5f5f5;
+            @include font-size-12-5-1;
+            padding: 0 0 10px;
+            text-align: center;
+        }
+
+        .nav-underline-1 {
+            border-color: $color-6;
+            color: $color-6;
+        }
+    }
+
+    &-body-table {
+
+        & tbody {
+            border: none;
+        }
+
+        & tr {
+            border: none;
+        }
+
+        & tr>td:nth-child(1) {
+            font-size: 12px;
+            width: 250px;
+            border: none;
+            text-align: right;
+            padding: 5px 0;
+            color: $color-1;
+        }
+
+        & tr>td:nth-child(2) {
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            text-align: left;
+            padding: 15px 0 15px 15px;
+            color: $color-1;
+            vertical-align: middle;
+        }
+
+        .player-info {
+            margin-top: 5px;
+            padding-right: 15px;
+            width: 100%;
+
+            & img {
+                width: 30px;
+                height: 30px;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            & span:nth-of-type(1) {
+                color: $color-black;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.AsiaLig {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-8 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+        max-height: 350px;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #ea4336;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .AsiaLig-body-table-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .AsiaLig-body-table-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .AsiaLig-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .AsiaLig-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .AsiaLig-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .AsiaLig-body-table-col-3 {
+                    text-align: left;
+                    width: 12%;
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.EuropeLig {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-9 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #33ab54;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .EuropeLig-body-table-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .EuropeLig-body-table-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .EuropeLig-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .EuropeLig-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .EuropeLig-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .EuropeLig-body-table-col-3 {
+                    text-align: left;
+                    width: 12%;
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.europeLig {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-9 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #33ab54;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .europeLig-body-table-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .europeLig-body-table-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .europeLig-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .europeLig-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .europeLig-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .europeLig-body-table-col-3 {
+                    text-align: left;
+                    width: 12%;
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+            }
+
+            &-game {
+                padding: 5px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                &-icon {
+                    text-align: right;
+                    width: 14%;
+
+                    & a {
+                        color: $color-1;
+                    }
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+
+                &-name {
+                    width: 76%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color-1;
+
+                    .team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        word-spacing: -3px;
+                        letter-spacing: .2px;
+                    }
+
+                    .line {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: center;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        text-align: center;
+                        width: 16%;
+                        letter-spacing: .2px;
+                    }
+
+                    .team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        word-spacing: -3px;
+                        letter-spacing: .2px;
+                    }
+                }
+
+                &-time {
+                    text-align: left;
+                    width: 12%;
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.europeLigMoghadamaty {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-10 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-table-1 {
+        max-height: 300px;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #33ab54;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-body {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .europeLigMoghadamaty-table-1-body-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .europeLigMoghadamaty-table-1-body-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .europeLigMoghadamaty-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .europeLigMoghadamaty-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .europeLigMoghadamaty-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .europeLigMoghadamaty-table-1-body-col-3 {
+                    text-align: left;
+                    width: 12%;
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: auto;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $color-5;
+        }
+    }
+
+    &-table-2 {
+        width: 100%;
+        @include font-size-12-4-1;
+
+        &-title {
+            background-color: $color-3;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: $color-white;
+                margin-bottom: 0;
+            }
+        }
+
+        &-main {
+            width: 100%;
+
+            .europeLigMoghadamaty-table-2-content {
+                border-color: transparent !important;
+
+                &>thead>tr {
+                    background: $color-4;
+                }
+
+                &>thead>tr>th:nth-child(1) {
+                    width: 30px;
+                    color: $color-white;
+                    padding: 5px 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+
+                &>thead>tr>th:nth-child(2) {
+                    width: 150px;
+                    color: $color-white;
+                    padding: 5px 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+
+                &>thead>tr>th:nth-child(3),
+                &>thead>tr>th:nth-child(4) {
+                    width: 40px;
+                    color: $color-white;
+                    padding: 5px 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+
+                &>tbody>tr:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+
+                &>tbody>tr>td:nth-child(1),
+                &>tbody>tr>td:nth-child(4) {
+                    color: $color-black;
+                    font-weight: 500;
+                }
+
+                &>tbody>tr>td:nth-child(2),
+                &>tbody>tr>td:nth-child(3) {
+                    color: $color-1;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.lastNewsSoccer {
+    min-height: 400px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-body {
+
+
+        &-tabs {
+            padding: 0 0 20px 0;
+
+            .tabs-ul {
+                width: 100%;
+                text-align: center;
+                justify-content: space-evenly;
+
+                & li .active {
+                    border-color: $color-6;
+                    color: $color-6;
+                }
+            }
+
+            .tabs-li {
+                background-color: $color-white;
+                @include font-size-12-5-1;
+                padding-top: 15px;
+                text-align: center;
+            }
+
+            .nav-link-2 {
+                background-color: $color-white;
+                border-bottom: 2px solid #f5f5f5;
+                @include font-size-12-5-1;
+                padding: 15px 0;
+                text-align: center;
+            }
+
+            .nav-underline-1 {
+                border-color: $color-6;
+                color: $color-6;
+            }
+        }
+
+        &-content {
+
+            .lastNewsSoccer-filter {
+                background: #f5f5f5;
+                border-bottom: 1px solid #eee;
+                padding: 10px 0;
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+        
+                &-Anten,
+                &-Channel {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    font-size: 12px;
+                    padding: 0;
+                }
+        
+                &-Anten {
+                    color: red;
+                }
+        
+                .checkbox1,
+                .checkbox2,
+                .checkbox3 {
+                    border: 1px solid $color-6;
+                    border-radius: 4px;
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 5px;
+                    margin-top: 0;
+                    cursor: pointer;
+        
+                    &:checked {
+                        background-color: $color-6;
+                    }
+                }
+        
+                .form-check-input:focus {
+                    box-shadow: none;
+                }
+        
+                .form-check-input:checked {
+                    border-color: $color-6;
+                }
+        
+                .checkbox-label {
+                    padding-right: 5px;
+                    padding-top: 3px;
+                }
+            }
+        
+            .lastNewsSoccer-filter-error {
+                background-color: #f5e4de;
+                border-color: #ff7e75;
+                color: #e74c3c;
+                font-size: 12px;
+                padding: 5px;
+                text-align: center;
+                display: none;
+            }
+
+            .lastNewsSoccer-news {
+                max-height: 1000px;
+                min-height: 300px;
+                position: relative;
+                width: 100%;
+                overflow: auto;
+
+                &-tab1 {
+                    overflow: auto;
+                    width: 100%;
+
+                    & ul {
+                        padding-top: 10px;
+                    }
+
+                    &-item {
+                        width: 100%;
+                        padding: 3px 5px;
+                    }
+
+                    &-link {
+                        @include font-size-12-4-1;
+                        padding: 3px 0;
+                        text-align: justify;
+                        width: 100%;
+                        color: $color-1;
+                    }
+
+                    &-icon1 {
+                        background-image: url(../img/icon-news-video-filled.svg);
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                        position: relative;
+                        top: 3px;
+                    }
+
+                    &-icon2 {
+                        background-image: url(../img/news-type-text.svg);
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+
+                &::-webkit-scrollbar-button {
+                    display: none;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: auto;
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: $color-5;
+                }
+            }
+        }
+    }
+}
+
+.foreignLig {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        padding: 0 5px;
+
+        .form-select-10 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #4285f4;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 25px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                // background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .foreignLig-body-table-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .foreignLig-body-table-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .foreignLig-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .foreignLig-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .foreignLig-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .foreignLig-body-table-col-3 {
+                    text-align: left;
+                    width: 12%;
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+            }
+
+            &-game {
+                padding: 5px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                &-icon {
+                    text-align: right;
+                    width: 14%;
+
+                    & a {
+                        color: $color-1;
+                    }
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+
+                &-name {
+                    width: 76%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color-1;
+
+                    .team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        word-spacing: -3px;
+                        letter-spacing: .2px;
+                    }
+
+                    .line {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: center;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        text-align: center;
+                        width: 16%;
+                        letter-spacing: .2px;
+                    }
+
+                    .team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        word-spacing: -3px;
+                        letter-spacing: .2px;
+                    }
+                }
+
+                &-time {
+                    text-align: left;
+                    width: 12%;
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.foreignLigTable {
+    background: $color-white;
+    border-top: 3px solid $color-6;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    min-height: 100px;
+
+    &-title {
+        padding: 15px 0 10px;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-select-11 {
+        background-color: $color-white;
+        border: 1px solid #d7d7d7;
+        border-radius: 5px;
+        color: $color-1;
+        @include font-size-12-5-1;
+        // margin: 0 5px;
+        padding: 5px;
+        background-position: left .75rem center;
+
+        &:focus-visible {
+            border: 3px solid $color-black;
+            box-shadow: none;
+        }
+
+        & option {
+            color: $color-1;
+        }
+    }
+
+    .foreignLigTable-body {
+
+
+        &-title {
+            background-color: #4285f4;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: $color-white;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            @include font-size-12-4-1;
+
+            .table {
+                width: 100%;
+                border: 0;
+
+                & thead {
+                    border: 0;
+                }
+            }
+
+            .foreignLigTable-table-thead-tr {
+                background: $color-4;
+                color: $color-white;
+                border: 0;
+
+                & th {
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    padding: 5px 0;
+                }
+
+                & th:nth-of-type(1) {
+                    width: 30px;
+                }
+
+                & th:nth-of-type(2) {
+                    width: 150px;
+                }
+
+                & th:nth-of-type(3) {
+                    width: 40px;
+                }
+
+                & th:nth-of-type(4) {
+                    width: 40px;
+                }
+            }
+
+            .foreignLigTable-tbody tr:nth-child(odd) {
+                background: #f5f5f5;
+            }
+
+            .foreignLigTable-tbody tr>td:nth-of-type(1) {
+                color: $color-black;
+                padding: 5px 0;
+                @include font-size-12-5-1;
+                border: 0;
+            }
+
+            .foreignLigTable-tbody tr>td:nth-of-type(2) {
+                color: $color-1;
+                @include font-size-12-4-1;
+                padding: 5px 0;
+                border: 0;
+            }
+
+            .foreignLigTable-tbody tr>td:nth-of-type(3) {
+                color: $color-1;
+                @include font-size-12-4-1;
+                padding: 5px 0;
+                border: 0;
+            }
+
+            .foreignLigTable-tbody tr>td:nth-of-type(4) {
+                color: $color-black;
+                padding: 5px 0;
+                @include font-size-12-5-1;
+                border: 0;
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.jumGyms {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        padding: 0 5px;
+
+        .form-select-12 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+        max-height: 350px;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #4285f4;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .jumGyms-body-table-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .jumGyms-body-table-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .jumGyms-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .jumGyms-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .jumGyms-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .jumGyms-body-table-col-3 {
+                    text-align: left;
+                    width: 12%;
+
+                    & img {
+                        max-width: 17px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.EuropianLig {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        padding: 0 5px;
+
+        .form-select-12 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-body {
+        max-height: 350px;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #4285f4;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-table {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .EuropianLig-body-table-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .EuropianLig-body-table-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .EuropianLig-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .EuropianLig-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .EuropianLig-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .EuropianLig-table-col-3 {
+                    text-align: left;
+                    width: 12%;
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.AsianLig {
+    @include font-size-12-4-1;
+    min-height: 100px;
+    background: $color-white;
+    border-radius: 5px;
+    border-top: 3px solid $color-6;
+    margin-bottom: 16px;
+
+    &-title {
+        padding: 15px 0 10px;
+        width: 100%;
+
+        & h2 {
+            @include font-size-16-7-1;
+            color: $color-6;
+            margin-bottom: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &-filter {
+        margin-top: 10px;
+        width: 100%;
+
+        .form-select-14 {
+            background-color: $color-white;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            color: $color-1;
+            @include font-size-12-5-1;
+            // margin: 0 5px;
+            padding: 5px;
+            background-position: left .75rem center;
+
+            &:focus-visible {
+                border: 3px solid $color-black;
+                box-shadow: none;
+            }
+
+            & option {
+                color: $color-1;
+            }
+        }
+    }
+
+    &-table-1 {
+        max-height: 300px;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+
+        &-title {
+            background-color: #ea4336;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        &-body {
+            width: 100%;
+
+            &-title {
+                background: $color-4;
+                color: $color-white;
+                height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+
+                & h4 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    // padding: 5px 0;
+                }
+            }
+
+            &-content {
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                width: 100%;
+
+                .AsianLig-table-1-body-col-1 {
+                    display: inline-block;
+                    width: 14%;
+                    text-align: right;
+
+                    & img {
+                        max-width: 17px;
+                    }
+                }
+
+                .AsianLig-table-1-body-col-2 {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 76%;
+
+                    .AsianLig-team1 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: left;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+
+                    .AsianLig-underline {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        width: 16%;
+                        letter-spacing: -.2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                    }
+
+                    .AsianLig-team2 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        // line-height: 1;
+                        text-align: right;
+                        width: 42%;
+                        letter-spacing: -.2px;
+                    }
+                }
+
+                .AsianLig-table-1-body-col-3 {
+                    text-align: left;
+                    width: 12%;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: auto;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $color-5;
+        }
+    }
+
+    &-table-2 {
+        width: 100%;
+        @include font-size-12-4-1;
+
+        &-title {
+            background-color: #ea4336;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+
+            & h3 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: $color-white;
+                margin-bottom: 0;
+            }
+        }
+
+        &-main {
+            width: 100%;
+
+            .AsianLig-table-2-content {
+                border-color: transparent !important;
+
+                &>thead>tr {
+                    background: $color-4;
+                }
+
+                &>thead>tr>th:nth-child(1) {
+                    width: 30px;
+                    color: $color-white;
+                    padding: 5px 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+
+                &>thead>tr>th:nth-child(2) {
+                    width: 150px;
+                    color: $color-white;
+                    padding: 5px 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+
+                &>thead>tr>th:nth-child(3),
+                &>thead>tr>th:nth-child(4) {
+                    width: 40px;
+                    color: $color-white;
+                    padding: 5px 0;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                }
+
+                &>tbody>tr:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+
+                &>tbody>tr>td:nth-child(1),
+                &>tbody>tr>td:nth-child(4) {
+                    color: $color-black;
+                    font-weight: 500;
+                }
+
+                &>tbody>tr>td:nth-child(2),
+                &>tbody>tr>td:nth-child(3) {
+                    color: $color-1;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    &-more {
+        background: #fafafa;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+
+        & a {
+            color: $color-black;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            &::after {
+                background-image: url(../img/icon.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                content: "";
+                position: relative;
+                width: 20px;
+                height: 20px;
+                top: 7px;
+                display: inline-block;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.advertise-3 {
+    overflow: hidden;
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+
+    & a {
+        background-color: rgb(245, 245, 245);
+        height: 300px;
+        display: block;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    & img {
+        border-radius: 4px;
+        max-width: 100%;
+        height: 300px;
+        width: 100%;
+    }
+}
